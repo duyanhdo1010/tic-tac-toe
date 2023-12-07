@@ -1,0 +1,211 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em;
+    margin-bottom: 1em;
+}
+
+div.tic-tac-toe,
+div.turn,
+div.restart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button.rs-btn {
+    height: 100%;
+    padding: 0.25em 0.5em;
+    font-size: 40px;
+    background-color: #ffffff;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+button.rs-btn:hover {
+    background-color: #cccccc;
+
+}
+
+button.rs-btn:active {
+    transform: scale(0.95);
+  }
+
+div.board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 3px solid black;
+}
+
+div.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+div.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+div.p1-win, div.draw,div.p2-win {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75em;
+    padding: 0.5em;
+}
+
+#startGameModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#startGameModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 3px solid black;
+    gap: 1em;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+#startGameButton {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 3px solid black;
+}
+
+#startGameButton:hover {
+    background-color: #c8c8c8;
+}
+
+#endGameModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#endGameModal .modal-content {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 30%;
+    background-color: #ffffff;
+    border: 3px solid black;
+    font-size: 52px;
+    font-weight: bold;
+    padding: 0.25em;
+    border-radius: 12px;
+}
+
+.endGameText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.endGame-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.Home, .Next {
+    border: 3px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 12px;
+
+}

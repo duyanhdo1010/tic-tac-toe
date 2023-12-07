@@ -8,7 +8,50 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="tic-tac-toe">TIC TAC TOE</div>
+            <div class="turn"></div>
+            <div class="restart-btn">
+                <button type="button" class="rs-btn">Reset Board</button>
+            </div>
+        </div>
+        <div class="board"></div>
+        <div class="footer">
+            <div class="score">
+                <div class="p1-win">
+                    <div class="content">Player 1</div>
+                    <div class="p1-current-score"></div>
+                </div>
+                <div class="draw">
+                    <div class="content">Draw</div>
+                    <div class="draw-score"></div>
+                </div>
+                <div class="p2-win">
+                    <div class="content">Player 2</div>
+                    <div class="p2-current-score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <div id="startGameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">Tic Tac Toe by Duy Anh</div>
+          <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+    <div id="endGameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-box">
+                <div class="endGameText"></div>
+                <div class="endGame-btn">
+                    <button class="Home">Home</button>
+                    <button class="Next">Next Round</button>
+                </div>
+            </div>
+        </div>
+    </div> 
     <script src="./script.js"></script>
 </body>
 </html>
